@@ -135,7 +135,6 @@ html {
 
 #gameMessage {
   position: fixed;
-  margin-top: 40px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -209,6 +208,14 @@ html {
   .game-levels h3 {
     font-size: 2rem;
   }
+
+  #gameMessage p {
+    font-size: 1.3rem;
+  }
+
+  #gameMessage button {
+    font-size: 1.2rem;
+}
 }
 
 
@@ -240,10 +247,19 @@ html {
   .game-level-buttons {
     margin-left: 10%;
   }
+
   .game-levels h3 {
     font-size: 2rem;
     text-align: center;
   }
+
+  #gameMessage p {
+    font-size: 1.1rem;
+  }
+
+  #gameMessage button {
+    font-size: 1rem;
+}
 }
 
 @media (max-width: 280px){
@@ -274,8 +290,17 @@ html {
   .game-level-buttons {
     margin-left: 10%;
   }
+
   .game-levels h3 {
     font-size: 1.3rem;
     text-align: center;
   }
+
+  #gameMessage p {
+    font-size: 1.1rem;
+  }
+
+  #gameMessage button {
+    font-size: 1rem;
+}
 }
