@@ -193,7 +193,7 @@ html {
     margin-top: 5%;
   }
 
-  .welcome-container h1{
+  .welcome-container h1 {
     font-size: 6rem;
   }
 
@@ -215,7 +215,7 @@ html {
 
   #gameMessage button {
     font-size: 1.2rem;
-}
+  }
 }
 
 
@@ -224,7 +224,7 @@ html {
     display: none;
   }
 
-  .welcome-container h1{
+  .welcome-container h1 {
     font-size: 7rem;
     text-align: center;
   }
@@ -254,20 +254,24 @@ html {
   }
 
   #gameMessage p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   #gameMessage button {
-    font-size: 1rem;
-}
+    font-size: .9rem;
+  }
+
+  #gameMessage {
+    width: 70%;
+  }
 }
 
-@media (max-width: 280px){
+@media (max-width: 280px) {
   .home-image {
     display: none;
   }
 
-  .welcome-container h1{
+  .welcome-container h1 {
     font-size: 4rem;
     text-align: center;
   }
@@ -302,5 +306,9 @@ html {
 
   #gameMessage button {
     font-size: 1rem;
-}
+  }
+
+  #gameMessage {
+    width: 70%;
+  }
 }
