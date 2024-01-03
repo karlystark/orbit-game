@@ -23,13 +23,13 @@ html {
 }
 
 .welcome-container h1 {
-  font-size: 10rem;
+  font-size: 8rem;
   color: #fef5e1;
 }
 
 .welcome-container h2 {
-  font-size: 3rem;
-  margin-top: -9%;
+  font-size: 2rem;
+  margin-top: -7%;
 }
 
 .welcome-container p {
@@ -50,8 +50,8 @@ html {
 }
 
 .game-levels h3 {
-  font-size: 3rem;
-  margin-top: 10%;
+  font-size: 2.5rem;
+  margin-top: 8%;
 }
 
 .game-level-buttons button {
