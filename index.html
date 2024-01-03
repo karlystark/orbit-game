@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbit</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="welcome-container" id="welcome-container">
+    <div class="welcome-title">
+      <h1>ORBIT</h1>
+      <h2>it's all about touch, baby</h2>
+      <p>these planets are moving at different speeds, but we want them to
+        align on the red middle line at the same time. click on the planets and
+        set them in orbit!
+      </p>
+      <div class="game-levels">
+        <h3>Select your level:</h3>
+        <div class="game-level-buttons">
+          <button id="easyLevelButton"> Easy </button>
+          <button id="mediumLevelButton"> Medium </button>
+          <button id="hardLevelButton"> Hard </button>
+        </div>
+      </div>
+    </div>
+    <img src="home.png" class="home-image" alt="a moon peeks out over a planet
+    surface with stars in the background" />
+  </div>
+
+  </div>
+
+  <div class="slider-container" id="slider-container" style="display:none;">
+    <div class="slider" id="slider1">
+      <div class="slider-circle"></div>
+    </div>
+    <div class="slider" id="slider2">
+      <div class="slider-circle"></div>
+    </div>
+    <div class="alignment-line"></div>
+  </div>
+  </div>
+
+  <div id="gameMessage" style="display: none;">
+    <div id="message-container">
+    </div>
+    <button id="resetButton">Play Again</button>
+    <button id="chooseLevelButton">Choose Another Level</button>
+  </div>
+
+  <script src="orbit.js"></script>
+</body>
+
+</html>
