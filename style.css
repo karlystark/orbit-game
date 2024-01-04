@@ -117,27 +117,20 @@ html {
 
 /********** MESSAGE BOX STYLES **************/
 
-.instructions {
-  padding: 10px;
-  margin: 40px;
-  background-color: #fef5e1;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  text-align: center;
-  width: 35%;
-
-}
-
-.instructions p {
-  font-size: 1.4rem;
-  color: #0b0721;
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #gameMessage {
-  position: fixed;
+  /* position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  width: 30%;
+  margin-top: 8%;
+  align-self: center;
   background-color: #fef5e1;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -244,8 +237,10 @@ html {
     font-size: 1.4rem;
   }
 
-  .game-level-buttons {
-    margin-left: 10%;
+  .game-levels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .game-levels h3 {
@@ -264,6 +259,7 @@ html {
   #gameMessage {
     width: 70%;
   }
+
 }
 
 @media (max-width: 280px) {
@@ -291,8 +287,10 @@ html {
     font-size: 1.1rem;
   }
 
-  .game-level-buttons {
-    margin-left: 10%;
+  .game-levels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .game-levels h3 {
