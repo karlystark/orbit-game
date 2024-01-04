@@ -13,10 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const easyLevelButton = document.querySelector("#easyLevelButton");
   const mediumLevelButton = document.querySelector("#mediumLevelButton");
   const hardLevelButton = document.querySelector("#hardLevelButton");
+  const randomLevelButton = document.querySelector("#randomLevelButton");
+  const twoSlidersButton = document.querySelector("#twoSlidersButton");
+  const threeSlidersButton = document.querySelector("#threeSlidersButton");
+  const fourSlidersButton = document.querySelector("#fourSlidersButton");
   const chooseAnotherLevelButton = document.querySelector("#chooseLevelButton");
 
   let intervalSpeeds = []; // Speeds for each slider
   let intervals = [];
+  let numSliders;
   let isSliderClicked = new Array(sliders.length).fill(false);
   let positions = new Array(sliders.length).fill(0);
   let lastCross = new Array(sliders.length).fill(-1);
@@ -36,6 +41,18 @@ document.addEventListener("DOMContentLoaded", () => {
   hardLevelButton.addEventListener('click', function () {
     handleLevelChange([3, 15]);
   });
+
+  randomLevelButton.addEventListener('click', function () {
+    const randomSpeed1 = Math.floor(Math.random() * 29) + 2; //random num between 2 and 30
+    const randomSpeed2 = Math.floor(Math.random() * 29) + 2;
+
+    if (Math.abs(randomSpeed1 - randomSpeed2) > 5) {
+      handleLevelChange([randomSpeed1, randomSpeed2]);
+    } else {
+      handleLevelChange([(randomSpeed1 + 5), randomSpeed2]);
+    }
+  });
+
 
   chooseAnotherLevelButton.addEventListener('click', function () {
     resetGame();

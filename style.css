@@ -44,17 +44,17 @@ html {
   margin-top: -5%;
 }
 
-.game-levels {
+.game-levels, .game-slider-levels {
   justify-content: center;
   margin-top: -3%;
 }
 
-.game-levels h3 {
+.game-levels h3, .game-slider-levels h3 {
   font-size: 2.5rem;
   margin-top: 8%;
 }
 
-.game-level-buttons button {
+.welcome-container button{
   background-color: #fef5e1;
   border: 0px;
   padding: 15px;
@@ -67,10 +67,16 @@ html {
   transition: 0.2s ease-in-out;
 }
 
-.game-level-buttons button:hover {
+.welcome-container button:hover {
   transform: scale(1.1);
 }
 
+.game-level-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  /* justify-content: center; */
+}
 
 
 /********** SLIDER STYLES **********/
@@ -194,7 +200,7 @@ html {
     font-size: 1.3rem;
   }
 
-  .game-level-buttons button {
+  .game-level-buttons button, #randomLevelButton {
     font-size: 1.4rem;
   }
 
@@ -233,8 +239,18 @@ html {
     text-align: center;
   }
 
-  .game-level-buttons button {
+  .game-level-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .game-level-buttons button, #randomLevelButton {
     font-size: 1.4rem;
+  }
+
+  .game-level-buttons h3 {
+    margin-top: 3%;
   }
 
   .game-levels {
@@ -283,7 +299,13 @@ html {
     text-align: center;
   }
 
-  .game-level-buttons button {
+  .game-level-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .game-level-buttons button, #randomLevelButton {
     font-size: 1.1rem;
   }
 
@@ -296,6 +318,11 @@ html {
   .game-levels h3 {
     font-size: 1.3rem;
     text-align: center;
+  }
+
+  .game-level-buttons h3 {
+    font-size: 1.3rem;
+    margin-top: 3%;
   }
 
   #gameMessage p {
